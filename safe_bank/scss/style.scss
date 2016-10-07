@@ -1,0 +1,65 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'modules/variables';
+@import 'partials/grid';
+@import 'breakpoints/desktop';
+@import 'breakpoints/tablet';
+@import 'breakpoints/mobile';
+
+
+*{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ebebeb;
+}
+
+.top{
+  form{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    input{
+      height: 30px;
+    }
+    input[type="search"]{
+      width: 150px;
+    }
+    &::after{
+      content: '\f002';
+      font-family: 'FontAwesome';
+      position: absolute;
+      left: 115px;
+      top: 0;
+      border-left: 1px solid $backGroundColor;
+      display: block;
+      height: 17px;
+      padding: 10px;
+      color: $mainColor;
+    }
+  }
+}
+
+input[type="submit"]{
+  background-color: $mainColor;
+  border-color: $mainColor;
+  border-radius: 7px;
+  color: white;
+  width: 150px;
+}
+
+.banner{
+  background: url('../img/wyciete/triangle.jpg') repeat-x,
+              url('../img/wyciete/banerjpg.jpg') no-repeat,
+              $mainColor;
+  background-position: 0 0,
+                       0 25px;
+  height: 300px;
+}
+
+.prod, .options{background-color: white;}
+
+.icons{background-color: $mainColor;}

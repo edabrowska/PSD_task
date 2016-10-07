@@ -1,0 +1,26 @@
+
+@media#{$mobile}{
+  .top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_links{
+    span{
+      display: block;
+      color: white;
+      cursor: pointer;
+    }
+    li{
+      a{
+      display: none;
+      &.show{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+      }
+    }
+    }
+  }
+}

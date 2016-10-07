@@ -1,0 +1,38 @@
+
+@media#{$desktop}{
+  header{
+    width: 100%;
+  }
+
+  .mainWidth{
+    width: 1103px;
+    margin: 0 auto;
+  }
+
+  .top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  .header_links{
+    span{
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  .clients{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    ul{
+
+      li{
+        display: inline-block;
+      }
+    }
+  }
+}
