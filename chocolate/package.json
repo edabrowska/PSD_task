@@ -1,0 +1,17 @@
+{
+  "name": "rwd_task",
+  "version": "1.0.0",
+  "description": "Ustaw viewport dla Twojej strony tak, aby zawsze był taki jak szerokość urządzenia, a domyślne powiększenie miało wartość **1**.\r Napisz w komentarzu swoje spostrzeżenia.\r Zmień wartość atrybutu **content** na `width=500`, a następnie na `width=100`.\r Napisz w komentarzu swoje spostrzeżenia, co się zmieniło?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*"
+  }
+}
