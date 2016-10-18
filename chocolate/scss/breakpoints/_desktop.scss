@@ -1,0 +1,23 @@
+@media#{$desktop}{
+  .main_width{
+      width: 900px;
+      margin: 0 auto;
+  }
+
+  .menu{
+    position: absolute;
+    list-style-type: none;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    i{
+      visibility: hidden;
+    }
+    li{
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}

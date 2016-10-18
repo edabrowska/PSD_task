@@ -1,0 +1,55 @@
+@media#{$mobile}{
+  .nav_black{
+    position: relative;
+  }
+
+  .nav_logo{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .nav_cloud, .nav_cloud_little1, .nav_cloud_little2, .nav_cloud_little3{
+    visibility: hidden;
+  }
+
+  .menu{
+    list-style-type: none;
+    i{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      .fa-bars {
+        font-size: (5em / 3);
+        line-height: (3em / 4);
+        vertical-align: -15%;
+      }
+    }
+    li{
+      color: white;
+      a{
+        display: none;
+        &.show{
+          text-decoration: none;
+          width: 30%;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px;
+          display: block;
+          background-color: black;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+}

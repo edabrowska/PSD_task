@@ -1,23 +1,32 @@
-body{
-    font: 400 16px / 24px Arial;
-}
-.main_width{
-    width: 900px;
+@import 'modules/variables';
+@import 'partials/grid';
+@import 'breakpoints/mobile';
+@import 'breakpoints/tablet';
+@import 'breakpoints/desktop';
+
+*{
+  font: 400 16px / 24px Arial;
+  box-sizing: border-box;
 }
 
+body{
+
+}
 .nav_black{
     background-color: black;
     color: white;
+    height: 80px;
 }
+
 .nav_cloud_par{
     color: black;
-    
+
 }
 .header_banner{
-    background: url(images/Layer-2.png); 
+    background: url("../images/Layer-2.png");
 }
 .header_banner_pic{
-    background: url(images/Warstwa-4.png);
+    background: url("../images/Warstwa-4.png");
 }
 .header_banner_par{
     color: white;

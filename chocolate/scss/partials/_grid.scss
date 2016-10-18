@@ -1,0 +1,33 @@
+.row{
+  &::before,
+  &::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-']{
+  float: left;
+  min-height: 1px;
+  width: $columnsWidth;
+  padding: 3px;
+}
+
+@media#{$mobile}{
+  @for $i from 1 through $columnsNo{
+    .col-sm-#{$i} {width: $columnsWidth * $i;}
+  }
+}
+
+@media#{$tablet}{
+  @for $i from 1 through $columnsNo{
+    .col-md-#{$i} {width: $columnsWidth * $i;}
+  }
+}
+
+@media#{$desktop}{
+  @for $i from 1 through $columnsNo{
+    .col-md-#{$i} {width: $columnsWidth * $i;}
+  }
+}
