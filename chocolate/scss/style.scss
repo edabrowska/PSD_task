@@ -9,9 +9,7 @@
   box-sizing: border-box;
 }
 
-body{
-
-}
+//header
 .nav_black{
     background-color: black;
     color: white;
@@ -20,20 +18,69 @@ body{
 
 .nav_cloud_par{
     color: black;
-
 }
 .header_banner{
+    height: 180px;
     background: url("../images/Layer-2.png");
+    position: relative;
+    h3{
+      color: white;
+    }
 }
 .header_banner_pic{
     background: url("../images/Warstwa-4.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: right;
+    padding-bottom: (215 / 455) * 100%;
+    position: absolute;
+    top: -94px;
+    z-index: 0;
+}
+h3{
+  font-weight: bold;
 }
 .header_banner_par{
     color: white;
 }
+
+//history
 .history{
     background-color: white;
 }
+.history_descr{
+  img{
+    float: left;
+    margin: 10px;
+  }
+  p{
+    display: inline;
+  }
+}
+
+.history_words{
+  .biggest{
+    font-size: 24px;
+    color: #118ea4;
+  }
+  .big{
+    font-size: 22px;
+    color: #72c5c9;
+  }
+  .small{
+    font-size: 20px;
+    color: #b0dfef;
+  }
+  .black{
+    font-size: 18px;
+  }
+  .gray{
+    font-size: 16px;
+    color: #cecece;
+  }
+}
+
+//work
 .work{
     background-color: black;
     color: white;

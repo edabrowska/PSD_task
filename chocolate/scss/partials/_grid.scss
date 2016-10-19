@@ -28,6 +28,6 @@
 
 @media#{$desktop}{
   @for $i from 1 through $columnsNo{
-    .col-md-#{$i} {width: $columnsWidth * $i;}
+    .col-lg-#{$i} {width: $columnsWidth * $i;}
   }
 }

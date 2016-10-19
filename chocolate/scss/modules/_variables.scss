@@ -7,3 +7,35 @@ $columnsWidth: (100% / $columnsNo);
 $mobile: "(max-width: 600px)";
 $tablet: "(min-width: 601px) and (max-width: 1000px)";
 $desktop: "(min-width: 1001px)";
+$breakpoints: (
+  mobile: 200px,
+  tablet: 601px,
+  desktop: 1001px
+);
+
+//fontsize
+$headingSize: 20px;
+$textSize: 12px;
+
+@mixin mainTextSize($minWidth,$newTextSize){
+  @media(min-width: $minWidth){
+    body{
+      font-size: $newTextSize;
+    }
+  }
+}
+
+
+@mixin mainHeadingSizes($minWidth,$newHeadingSize){
+  @media(min-width: $minWidth){
+    h3{
+      font-size: $newHeadingSize;
+    }
+  }
+}
+@each $name, $value in $breakpoints{
+    @include mainHeadingSizes($value,$headingSize);
+    $headingSize: $headingSize + 2;
+    @include mainTextSize($value,$textSize);
+    $textSize: $textSize + 2;
+}

@@ -1,4 +1,5 @@
 @media#{$mobile}{
+//header
   .nav_black{
     position: relative;
   }
@@ -10,15 +11,16 @@
   }
 
   .nav_cloud, .nav_cloud_little1, .nav_cloud_little2, .nav_cloud_little3{
-    visibility: hidden;
+    display: none;
   }
 
   .menu{
     list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 99999;
     i{
-      position: absolute;
-      top: 20px;
-      right: 20px;
       cursor: pointer;
       .fa-bars {
         font-size: (5em / 3);
@@ -37,16 +39,31 @@
           text-transform: uppercase;
           padding: 10px;
           display: block;
-          background-color: black;
+          color: white;
         }
       }
     }
   }
 
+  .header_banner{
+    h3{
+      margin-left: 10px;
+    }
+    .header_banner_par{
+      margin-left: 10px;
+    }
+  }
 
-
-
-
+//history
+  .history_descr{
+    h3{
+      margin-left: 10px;
+    }
+  }
+  
+  .history_words{
+    margin: 10px;
+  }
 
 
 
