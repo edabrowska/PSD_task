@@ -15,7 +15,7 @@ $breakpoints: (
 
 //fontsize
 $headingSize: 20px;
-$textSize: 12px;
+$textSize: 14px;
 
 @mixin mainTextSize($minWidth,$newTextSize){
   @media(min-width: $minWidth){

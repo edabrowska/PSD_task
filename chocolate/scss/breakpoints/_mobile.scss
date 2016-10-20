@@ -60,12 +60,20 @@
       margin-left: 10px;
     }
   }
-  
+
   .history_words{
     margin: 10px;
   }
 
-
+//work
+ .work_descr{
+   h3, p{
+     margin-left: 10px;
+   }
+   .work_par_small{
+     font-size: $textSize - 8px;
+   }
+ }
 
 
 

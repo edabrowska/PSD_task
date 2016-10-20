@@ -5,7 +5,8 @@
 @import 'breakpoints/desktop';
 
 *{
-  font: 400 16px / 24px Arial;
+  font-family: Arial;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -32,9 +33,10 @@
     background-repeat: no-repeat;
     height: 100%;
     background-position: right;
-    padding-bottom: (215 / 455) * 100%;
+    max-width: 100%;
+//    height: auto;
     position: absolute;
-    top: -94px;
+//    top: -94px;
     z-index: 0;
 }
 h3{
@@ -52,6 +54,8 @@ h3{
   img{
     float: left;
     margin: 10px;
+    max-width: 100%;
+    height: auto;
   }
   p{
     display: inline;
@@ -84,4 +88,16 @@ h3{
 .work{
     background-color: black;
     color: white;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+//food
+.food_background{
+  background: url("../images/Warstwa3.jpg");
+  background-repeat: no-repeat;
+  height: 350px;
+  max-width: 100%;
 }
